@@ -6,7 +6,7 @@ const afiliateSchema = new mongoose.Schema(
     name: { type: String, required: true },
     lastName: { type: String, required: true },
     grade: { type: String, required: true },
-    email: { type: String, required: false, unique: true },
+    email: { type: String, required: false },
     numberPhone: { type: String, required: false },
     address: { type: String, required: false },
     imageUrl: {
