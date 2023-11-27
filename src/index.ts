@@ -21,7 +21,7 @@ function pingBackend() {
   console.log('Ping......');
 }
 
-setInterval(pingBackend, 600000);
+setInterval(pingBackend, 300000);
 
 app.listen(process.env.PORT, () => {
   console.log('Server on port', process.env.PORT);
