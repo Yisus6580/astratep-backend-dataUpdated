@@ -17,6 +17,12 @@ app.use(cors({ origin: '*' }));
 
 app.use('/api/afiliate', afiliateRoutes);
 
+function pingBackend() {
+  console.log('Ping......');
+}
+
+setInterval(pingBackend, 600000);
+
 app.listen(process.env.PORT, () => {
   console.log('Server on port', process.env.PORT);
 });
